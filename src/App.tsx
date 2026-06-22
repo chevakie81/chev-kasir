@@ -96,9 +96,9 @@ export default function App() {
     // Users (Employees with roles)
     const savedUsers = localStorage.getItem('kp_users');
     const defaultUsers: User[] = [
-      { id: 'user-1', username: 'owner', name: 'Adi Pemilik', role: 'owner', active: true },
-      { id: 'user-2', username: 'admin', name: 'Fajar Admin', role: 'admin', active: true },
-      { id: 'user-3', username: 'kasir', name: 'Rina Kasir', role: 'cashier', active: true }
+      { id: 'user-1', username: 'owner', name: 'Agus Pemilik', role: 'owner', active: true },
+      { id: 'user-2', username: 'admin', name: 'Reza Admin', role: 'admin', active: true },
+      { id: 'user-3', username: 'kasir', name: 'Upit Kasir', role: 'cashier', active: true }
     ];
     if (savedUsers) {
       setUsers(JSON.parse(savedUsers));
@@ -620,7 +620,7 @@ export default function App() {
                           </span>
                         )}
                       </h2>
-                      <p className="text-[10px] text-slate-400 font-medium hidden sm:block">Fasilitas administrasi toko mitra mandiri</p>
+                      <p className="text-[10px] text-slate-400 font-medium hidden sm:block">Fasilitas administrasi kedai seblak teh evi</p>
                     </div>
                   </div>
 
