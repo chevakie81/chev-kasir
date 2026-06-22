@@ -61,8 +61,8 @@ export default function Dashboard({
   const PIE_COLORS = ['#34d399', '#3b82f6', '#f59e0b', '#ec4899', '#8b5cf6', '#ef4444'];
 
   // Default store settings fallbacks if not supplied
-  const activeStoreName = storeSettings?.name || "KASIR PINTAR COFFEE & EATERY";
-  const activeStoreAddress = storeSettings?.address || "Jl. Sudirman No. 45, Jakarta";
+  const activeStoreName = storeSettings?.name || "KASIR PINTAR KEDAI SEBLAK TEH EVI";
+  const activeStoreAddress = storeSettings?.address || "Jl. Raya Bayongbong";
 
   // Filter transactions based on dateRange and selectedMonth
   const filteredTransactions = useMemo(() => {
@@ -222,9 +222,9 @@ export default function Dashboard({
 
   // Active cashier personnel tracking
   const cashiersActivity = useMemo(() => {
-    const ownerUser = users.find(u => u.role === 'owner') || { id: 'user-1', name: 'Adi Pemilik' };
-    const adminUser = users.find(u => u.role === 'admin') || { id: 'user-2', name: 'Fajar Admin' };
-    const cashierUser = users.find(u => u.role === 'cashier') || { id: 'user-3', name: 'Rina Kasir' };
+    const ownerUser = users.find(u => u.role === 'owner') || { id: 'user-1', name: 'Agus Pemilik' };
+    const adminUser = users.find(u => u.role === 'admin') || { id: 'user-2', name: 'Reza Admin' };
+    const cashierUser = users.find(u => u.role === 'cashier') || { id: 'user-3', name: 'Upit Kasir' };
 
     const getInitialsLocal = (fullName: string) => {
       const parts = fullName.trim().split(/\s+/);
@@ -243,12 +243,12 @@ export default function Dashboard({
       const nameKey = t.cashierName.toLowerCase();
       let matchedKey = 'kasir';
       
-      const ownerFirstWord = ownerUser.name.toLowerCase().split(' ')[0] || 'adi';
-      const adminFirstWord = adminUser.name.toLowerCase().split(' ')[0] || 'fajar';
+      const ownerFirstWord = ownerUser.name.toLowerCase().split(' ')[0] || 'agus';
+      const adminFirstWord = adminUser.name.toLowerCase().split(' ')[0] || 'reza';
       
-      if (nameKey.includes(ownerFirstWord) || nameKey.includes('adi')) {
+      if (nameKey.includes(ownerFirstWord) || nameKey.includes('agus')) {
         matchedKey = 'owner';
-      } else if (nameKey.includes(adminFirstWord) || nameKey.includes('fajar')) {
+      } else if (nameKey.includes(adminFirstWord) || nameKey.includes('reza')) {
         matchedKey = 'admin';
       }
       
