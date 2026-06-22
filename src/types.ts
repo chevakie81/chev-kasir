@@ -189,7 +189,7 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     cashAmount: 60000,
     changeAmount: 2280,
     cashierId: 'user-3',
-    cashierName: 'Rina Kasir',
+    cashierName: 'Dewi Kasir',
   },
   {
     id: 'tx-002',
@@ -205,7 +205,7 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     total: 104340,
     paymentMethod: 'qris',
     cashierId: 'user-3',
-    cashierName: 'Rina Kasir',
+    cashierName: 'Dewi Kasir',
   },
   {
     id: 'tx-003',
@@ -220,7 +220,7 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     total: 63270,
     paymentMethod: 'dana',
     cashierId: 'user-3',
-    cashierName: 'Rina Kasir',
+    cashierName: 'Dewi Kasir',
   },
   {
     id: 'tx-004',
@@ -237,7 +237,7 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     total: 67710,
     paymentMethod: 'gopay',
     cashierId: 'user-3',
-    cashierName: 'Rina Kasir',
+    cashierName: 'Dewi Kasir',
   },
   {
     id: 'tx-005',
@@ -253,7 +253,7 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     total: 64380,
     paymentMethod: 'ovo',
     cashierId: 'user-3',
-    cashierName: 'Rina Kasir',
+    cashierName: 'Dewi Kasir',
   },
   {
     id: 'tx-006',
@@ -269,7 +269,7 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     total: 185370,
     paymentMethod: 'qris',
     cashierId: 'user-1',
-    cashierName: 'Adi Pemilik',
+    cashierName: 'Agus Pemilik',
   },
   {
     id: 'tx-007',
@@ -285,6 +285,6 @@ export const INITIAL_TRANSACTIONS: Transaction[] = [
     total: 79920,
     paymentMethod: 'shopeepay',
     cashierId: 'user-2',
-    cashierName: 'Fajar Admin',
+    cashierName: 'Reza Admin',
   },
 ];
